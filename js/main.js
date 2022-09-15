@@ -8,11 +8,14 @@ let links = [
 let list = document.getElementById("myList"); //get the ul element 
 
 links.forEach(item => {
+    // create the element li and add to the HLML
     let li = document.createElement("li");
     list.appendChild(li);
-    let title = document.createElement("a");
-    title.setAttribute("href",item.url);
-    let aTexto = document.createTextNode(item.label);
-    li.appendChild(aTexto);
-    li.appendChild(title);
+    //create the element a and set the atributes and add to the html
+    let a = document.createElement("a");
+    let linkText = document.createTextNode(item.label);
+    a.appendChild(linkText);
+    a.title = item.label;
+    a.href = item.url;
+    li.appendChild(a);
 });
