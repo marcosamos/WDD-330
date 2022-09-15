@@ -1,0 +1,12 @@
+/* ———– mobile responsive ———– */
+@media only screen and (max-width: 732px)
+{
+    .display_grid, header{
+        display: block;
+        text-align: center;
+    }
+
+    .main_ul{
+        width:  80%;
+    }
+}
