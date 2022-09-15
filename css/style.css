@@ -60,6 +60,7 @@ main ul li{
     font-size: 3rem;
     text-align: center;
     padding: .8rem;
+    overflow-wrap: break-word;
 }
 
 .main_ul{
@@ -67,7 +68,7 @@ main ul li{
     background-color: rgb(51, 173, 204);
     list-style: none;
     border-radius: 1.3rem;
-    width: 60%;
+    width: 90%;
     margin: auto;
     margin-bottom: 25px;
 }

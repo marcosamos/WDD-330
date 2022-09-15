@@ -1,11 +1,7 @@
 let links = [
     {
-        label: "week1 notes",
-        url: "week1/index.html"
-    },
-    {
         label: "Activity week1",
-        url: "story_editor"
+        url: "https://marcosamos.github.io/wdd330/week1/story_editor.html"
     }
 ];
 
