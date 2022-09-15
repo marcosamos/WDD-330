@@ -13,8 +13,10 @@ let links = [
 let list = document.getElementById("myList"); //get the ol element 
 
 links.forEach(item => {
+    let title = document.createElement("li");
     let li = document.createElement("li");
-    li.innerText = item.label;
+    title.innerText = item.label;
     li.innerText = item.url;
+    list.appendChild(title);
     list.appendChild(li);
 });
