@@ -2,6 +2,10 @@ let links = [
     {
         label: "Week1",
         url: "https://marcosamos.github.io/wdd330/week1/index.html"
+    },
+    {
+        label:"week2",
+        url: "https://marcosamos.github.io/wdd330/week2/index.html"
     }
 ];
 
