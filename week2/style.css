@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(51, 54, 58, 0.992);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    color: aqua;
+}
+
+h3{
+    color: orange;
+}
