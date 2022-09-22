@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(51, 54, 58, 0.992);
+    color: white;
+    text-align: center;
+}
+
+ul{
+    text-align: left;
+    border: 1px solid white;
+
+}
+
+ul  li a{
+    color: yellow;
+}
+
+ul li, ol {
+    font-size: 30px;
+}
