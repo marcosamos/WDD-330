@@ -12,6 +12,7 @@ function calculate(num){
   return total;
 }
 
+
 function button_click(){
   // get number from input element
   num = number.value;
