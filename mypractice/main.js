@@ -1,4 +1,4 @@
-/*import { hikeList } from "./hikes.js";
+import { hikeList } from "./hikes.js";
 
 const hikeListHtml = document.getElementById("hikes");
 
@@ -36,5 +36,5 @@ hikeList.forEach (item => {
     hikeListHtml.appendChild(pHtml4);
     let directionsText = document.createTextNode(item.directions);
     pHtml4.appendChild(directionsText);
-})*/
+})
 
