@@ -15,6 +15,10 @@ let links = [
     },
     {   label:"week5",
         url: "https://marcosamos.github.io/wdd330/week5/index.html"
+    },
+    {
+        label:"Midterm Checkin",
+        url:"https://marcosamos.github.io/wdd330/proyects/index.html"
     }
 ];
 
