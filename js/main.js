@@ -22,7 +22,7 @@ let links = [
     },
     {
         label:"week7",
-        url:"https://marcosamos.github.io/wdd330/projects/week7/index.html"
+        url:"https://marcosamos.github.io/wdd330/week7/index.html"
     }
 ];
 
