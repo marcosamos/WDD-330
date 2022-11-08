@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Animation Example</title>
+<style>
+    #square {
+        display: inline-block;
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background: #d16;
+}
+
+
+#square4 {
+        display: inline-block;
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background: #d16;
+}
+</style>
+</head>
+<body>
+    <div id='square'></div>
+    <div id='square'></div>
+    <div id='square'></div>
+    <div id='square4'></div>
+<script>
+const squareElement = document.getElementById('square');
+const squareElement4 = document.getElementById('square4');
+let angle = 0;
+
+function rotate() {
+    angle = (angle + 2)%360;
+    squareElement.style.transform = `rotate(${angle}deg)`
+    window.requestAnimationFrame(rotate);
+}
+
+const id = requestAnimationFrame(rotate);
+
+
+setInterval( () => {
+    angle = (angle + 2) % 360;
+    squareElement4.style.transform = `rotate(${angle}deg)`
+}, 1000/60);
+</script>
+</body>
+</html>
