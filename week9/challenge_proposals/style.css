@@ -12,13 +12,18 @@ html{
 body{
     width: 80%;
     margin: auto;
-    
+    background-color: black;
 }
 
-h1{font-size: 3rem;}
-
+h1{font-size: 3rem;
+    margin-top:5rem;
+}
+h2{font-size: 2.7rem;
+    margin-top:5rem;
+}
 p{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-top:3.5rem;
 }
 
 a:link, a:visited, a:active {
@@ -54,9 +59,34 @@ nav ul{
 main{
     text-align: center;
     margin: 20px;
+    padding: 2rem;
+    background-color: antiquewhite;
 }
 
+.div_audience{
+    display: flex;
+    margin: 2rem;
+}
 
+.img_audience, img{
+    width: 50%;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.bs{
+    margin: 2rem;
+}
+
+footer{
+    color: white;
+}
+
+/* Typography */
+
+.typography{
+    font-family: Quicksand;
+}
 
 @media screen and (max-width: 650px){
     nav ul{
@@ -68,5 +98,14 @@ main{
     body{
         width: 100%;
     }
-    
+
+    .div_audience{
+        display: block;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
 }
