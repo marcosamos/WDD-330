@@ -35,6 +35,10 @@ let links = [
     {
         label:"week10",
         url:"https://marcosamos.github.io/wdd330/week10/index.html"
+    },
+    {
+        label:"week11",
+        url:"https://marcosamos.github.io/wdd330/week11/client/week11.html"
     }
 ];
 
