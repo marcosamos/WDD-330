@@ -1,0 +1,62 @@
+const productList = [
+
+    {
+    name: "Bike",
+    price: 120,
+    image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940;"
+    },
+
+    {
+    name: "Smart TV",
+    price: 1500,
+    image: "https://www.lg.com/mx/images/televisores/md07531103/gallery/D-1.jpg;"
+    },
+
+    {
+    name: "Computer",
+    price: 2000,
+    image: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;"
+    },
+
+    {
+    name: "Telephone",
+    price: 2000,
+    image: "https://images.pexels.com/photos/10397363/pexels-photo-10397363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;"
+    },
+
+    {
+    name: "Xbox Series S",
+    price: 5000,
+    image: "https://images.pexels.com/photos/12718988/pexels-photo-12718988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;"
+    },
+
+    {
+    name: "Xbox Series X",
+    price: 120,
+    image: "https://s.yimg.com/os/creatr-uploaded-images/2020-11/00ab1e70-1f19-11eb-bbfb-6d1c65d2b15f;"
+    },
+
+    {
+    name: "Nintendo swich",
+    price: 700,
+    image: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;"
+    },
+
+    {
+    name: "Master PC Race",
+    price: 8000,
+    image: "https://battler.gg/wp-content/uploads/2021/04/comprar-pc-gamer-2021-battler.jpg;"
+    },
+
+    {
+    name: "Samsung Galaxi S10",
+    price: 120,
+    image: "https://media.revistagq.com/photos/5ca5f0f3f464888999f49149/1:1/w_900,h_900,c_limit/samsung_galaxy_s10__1099.jpg;"
+    },
+
+    {
+    name: "Samsung Galaxi S22",
+    price: 120,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WmpudpOaTwjbWFNqWun5VV2a0JdcB7hd_w&usqp=CAU;"
+    },
+];
