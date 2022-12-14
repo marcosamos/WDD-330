@@ -60,46 +60,46 @@ fetch(requestUrl)
         console.table(jsonObject);
     });
 
-function renderProducts(arr){
+// function renderProducts(arr){
 
-    for (product of arr){
-        const productCard = document.createElement("div");
-        productCard.classList.add("product-card");
+//     for (product of arr){
+//         const productCard = document.createElement("div");
+//         productCard.classList.add("product-card");
     
-        const productImg = document.createElement("img");
-        productImg.setAttribute("src", product.image);
-        productImg.addEventListener("click", openProductDetailAside);
+//         const productImg = document.createElement("img");
+//         productImg.setAttribute("src", product.image);
+//         productImg.addEventListener("click", openProductDetailAside);
 
 
-        const producInfo = document.createElement("div");
-        producInfo.classList.add("product-info");
+//         const producInfo = document.createElement("div");
+//         producInfo.classList.add("product-info");
     
     
-        const productInfoDiv = document.createElement("div");
+//         const productInfoDiv = document.createElement("div");
     
-        const productPrice = document.createElement("p");
-        productPrice.innerText = `$ ${product.price}`;
+//         const productPrice = document.createElement("p");
+//         productPrice.innerText = `$ ${product.price}`;
     
-        const productName = document.createElement("p");
-        productName.innerText = `$ ${product.name}`;
+//         const productName = document.createElement("p");
+//         productName.innerText = `$ ${product.name}`;
     
-        productInfoDiv.appendChild(productPrice);
-        productInfoDiv.appendChild(productName);
+//         productInfoDiv.appendChild(productPrice);
+//         productInfoDiv.appendChild(productName);
     
-        const productInfoFigure = document.createElement("figure");
-        const productImgCart = document.createElement("img");
-        productImgCart.setAttribute("src", "./icons/bt_add_to_cart.svg");
+//         const productInfoFigure = document.createElement("figure");
+//         const productImgCart = document.createElement("img");
+//         productImgCart.setAttribute("src", "./icons/bt_add_to_cart.svg");
     
-        productInfoFigure.appendChild(productImgCart);
+//         productInfoFigure.appendChild(productImgCart);
         
-        producInfo.appendChild(productInfoDiv);
-        producInfo.appendChild(productInfoFigure);
+//         producInfo.appendChild(productInfoDiv);
+//         producInfo.appendChild(productInfoFigure);
         
-        productCard.appendChild(productImg);
-        productCard.appendChild(producInfo);
+//         productCard.appendChild(productImg);
+//         productCard.appendChild(producInfo);
     
-        cardsContainer.appendChild(productCard);
-    }
-}
+//         cardsContainer.appendChild(productCard);
+//     }
+// }
 
-renderProducts(productList);
+// renderProducts(productList);
