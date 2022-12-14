@@ -50,7 +50,7 @@ function closeProductDetailAside(){
     
 }
 
-const requestUrl = "https://marcosamos.github.io/wdd330/final-proyect/products.js"
+const requestUrl = "https://marcosamos.github.io/wdd330/final-proyect/products.json"
 
 fetch(requestUrl)
     .then(function(response){
