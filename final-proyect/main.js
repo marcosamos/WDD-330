@@ -10,8 +10,7 @@ const cardsContainer = document.querySelector(".cards-container");
 const productDetailContainer = document.querySelector("#productDetail");
 
 
-
-
+// add event listeners
 menuEmail.addEventListener("click", toggleDesktopMenu);
 menuHamIcon.addEventListener("click", toggleMobileMenu);
 menuCarritoIcon.addEventListener("click", toggleCarritoAside);
@@ -50,6 +49,9 @@ function closeProductDetailAside(){
     
 }
 
+
+
+// Fetch API request json file.
 const requestUrl = "https://marcosamos.github.io/wdd330/final-proyect/data/products.json"
 
 fetch(requestUrl)
@@ -57,49 +59,47 @@ fetch(requestUrl)
         return response.json();
     })
     .then(function (jsonObject){
-        console.table(jsonObject);
+        //console.log(jsonObject);
+        const products = jsonObject["productList"];
+        products.forEach(renderProducts);
     });
 
-// function renderProducts(arr){
+function renderProducts(product){
 
-//     for (product of arr){
-//         const productCard = document.createElement("div");
-//         productCard.classList.add("product-card");
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
     
-//         const productImg = document.createElement("img");
-//         productImg.setAttribute("src", product.image);
-//         productImg.addEventListener("click", openProductDetailAside);
+    const productImg = document.createElement("img");
+    productImg.setAttribute("src", product.image);
+    productImg.addEventListener("click", openProductDetailAside);
 
 
-//         const producInfo = document.createElement("div");
-//         producInfo.classList.add("product-info");
+    const producInfo = document.createElement("div");
+    producInfo.classList.add("product-info");
     
     
-//         const productInfoDiv = document.createElement("div");
+    const productInfoDiv = document.createElement("div");
     
-//         const productPrice = document.createElement("p");
-//         productPrice.innerText = `$ ${product.price}`;
+    const productPrice = document.createElement("p");
+    productPrice.innerText = `$ ${product.price}`;
     
-//         const productName = document.createElement("p");
-//         productName.innerText = `$ ${product.name}`;
+    const productName = document.createElement("p");
+    productName.innerText = `$ ${product.name}`;
     
-//         productInfoDiv.appendChild(productPrice);
-//         productInfoDiv.appendChild(productName);
+    productInfoDiv.appendChild(productPrice);
+    productInfoDiv.appendChild(productName);
     
-//         const productInfoFigure = document.createElement("figure");
-//         const productImgCart = document.createElement("img");
-//         productImgCart.setAttribute("src", "./icons/bt_add_to_cart.svg");
+    const productInfoFigure = document.createElement("figure");
+    const productImgCart = document.createElement("img");
+    productImgCart.setAttribute("src", "./icons/bt_add_to_cart.svg");
     
-//         productInfoFigure.appendChild(productImgCart);
+    productInfoFigure.appendChild(productImgCart);
         
-//         producInfo.appendChild(productInfoDiv);
-//         producInfo.appendChild(productInfoFigure);
+    producInfo.appendChild(productInfoDiv);
+    producInfo.appendChild(productInfoFigure);
         
-//         productCard.appendChild(productImg);
-//         productCard.appendChild(producInfo);
+    productCard.appendChild(productImg);
+    productCard.appendChild(producInfo);
     
-//         cardsContainer.appendChild(productCard);
-//     }
-// }
-
-// renderProducts(productList);
+    cardsContainer.appendChild(productCard);
+}

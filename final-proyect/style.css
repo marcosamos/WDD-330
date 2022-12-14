@@ -386,6 +386,14 @@ aside {
 
 
 
+/* Construction web */
+.construction-web{
+    text-align: center;
+    background-image: url(https://static9.depositphotos.com/1228953/1153/i/600/depositphotos_11530836-stock-photo-under-construction.jpg);
+}   
+
+
+
 @media (min-width: 641px){
     .mobile-menu{
         display: none;
